@@ -1,0 +1,14 @@
+---
+ - studentdetails: 
+   - name: raj
+     phoneno: 9876543210
+     address: kphb
+
+   - name: sai 
+     phoneno: 123456789
+     address: ameerpet
+
+   - name: chandu
+     phoneno: 4567891233
+     address: baratnagar
+       
