@@ -1,21 +1,26 @@
 ---
-- hosts: all
+- hosts: webservers
   become: yes
   tasks:
   - name: intall webserver on ubuntu
     apt: 
       name: apache2 
       state: present
+    when: ansible _os_family =="Debian"
+
   - name: start webserver of ubuntu
     service:
       name: apache2
       state: started
+    when: ansible_os_family =="Debian"  
 
   - name: install webserver on amazon
     yum: 
       name: httpd
       state: present
+    when: ansible_os_family =="RedHat"  
   - name: start webserver of amazon
     service: 
       name: httpd
       state: started   
+    when: ansible_os_family =="RedHat"  
