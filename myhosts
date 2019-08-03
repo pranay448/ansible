@@ -5,6 +5,10 @@
 172.31.29.73
 172.31.31.162
 
+[webservers:vars]
+webserveronubuntu: apache2
+webserveronamazon: httpd
+
 [appservers]
 172.31.22.188
 172.31.25.154
