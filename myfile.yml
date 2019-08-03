@@ -3,3 +3,8 @@
   file:
     path: /home/ubuntu/pranay.txt
     state: touch
+
+- name: create a file
+  file: 
+    path: /home/amazon-linux-2/kumar.txt
+    state: touch
