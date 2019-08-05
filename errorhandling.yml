@@ -1,5 +1,5 @@
 ---
-- hoosts: webservers
+- hosts: webservers
   become: yes
   tasks: 
   - name: install git
