@@ -1,6 +1,6 @@
 ---
 - hoosts: webservers
-  becone: yes
+  become: yes
   tasks: 
   - name: install git
     apt:
