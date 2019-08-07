@@ -1,2 +1,7 @@
 ---
 # handlers file for mytomcat7role
+- name: restarttomcat
+  service: 
+    name: tomcat7
+    state: restarted
+    
