@@ -2,7 +2,7 @@
 - hosts: webservers
   become: yes
   tasks:
-  - name: display hostname
+  - name: display hostname of servers
     command: hostname -f
     register: myresult
   - name: display result of above task(host info)
