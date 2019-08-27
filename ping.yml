@@ -2,7 +2,7 @@
 - hosts: all
   become: yes
   tasks: 
-  - name: i am pinging to all
+  - name: i am pinging to all nodes
     ping: 
 
   - name: i am going to install tree
